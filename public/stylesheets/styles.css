@@ -1,0 +1,88 @@
+footer {
+    background-color: #aaa;
+    padding: 15px;
+}
+
+h1,
+h2 {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.hero{
+    background: url(../images/header4.jpeg) no-repeat;
+    background-size: cover;
+    height: 50vh;
+    min-height: 600px;
+    color: white;
+}
+
+.lista-categorias{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-categorias li{
+    margin: 4px 0;
+}
+
+.lista-categorias li a{
+    background-color: #fff;
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.lista-categorias li a:hover{
+    color: #212529;
+    background-color: #dadada;
+}
+
+.lista-categorias li a img{
+    width: 115px;
+    height: 75px;
+    filter: grayscale();
+    transition: all .2s ease-in-out;
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+
+.lista-categorias li a:hover img {
+    filter: none;
+    margin-right: 1.4rem;
+    opacity: 1;
+}
+
+.testimonios{
+    background-color: #dadada;
+    padding-bottom: 4rem !important;
+}
+
+.testimonio{
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.staff{
+    background-color: #efefef;
+}
+
+.mapa iframe{
+    width: 100%;
+    aspect-ratio: 1.2;
+}
+
+.formulario{
+    width: 75%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.scroll_section{
+    scroll-margin-top: 60px;
+}
