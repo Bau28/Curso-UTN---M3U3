@@ -1,0 +1,16 @@
+<div class="container" style="margin: 100px auto" id="formulario">
+    <form action="/admin/login" method="post" class="formulario">
+        <div class="mb-3">
+            <label for="usuario" class="form-label">Usuario</label>
+            <input type="usuario" class="form-control" id="usuario" aria-describedby="emailHelp" name="usuario">
+        </div>
+        <div class="mb-3">
+            <label for="contraseña" class="form-label">Contraseña</label>
+            <input class="form-control" id="contraseña" name="contraseña">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    {{#if error}}
+    <p>Usuario y contraseña incorrectos</p>
+    {{/if}}
+</div>
