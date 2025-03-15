@@ -16,17 +16,17 @@ h2 {
     color: white;
 }
 
-.lista-categorias{
+.lista-novedades{
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.lista-categorias li{
+.lista-novedades li{
     margin: 4px 0;
 }
 
-.lista-categorias li a{
+.lista-novedades li a{
     background-color: #fff;
     font-family: 'Alfa Slab One', cursive;
     text-decoration: none;
@@ -36,12 +36,12 @@ h2 {
     display: block;
 }
 
-.lista-categorias li a:hover{
+.lista-novedades li a:hover{
     color: #212529;
     background-color: #dadada;
 }
 
-.lista-categorias li a img{
+.lista-novedades li a img{
     width: 115px;
     height: 75px;
     filter: grayscale();
@@ -50,7 +50,7 @@ h2 {
     opacity: 0.7;
 }
 
-.lista-categorias li a:hover img {
+.lista-novedades li a:hover img {
     filter: none;
     margin-right: 1.4rem;
     opacity: 1;

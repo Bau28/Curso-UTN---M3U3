@@ -8,31 +8,35 @@
     </div>
 </div>
 <div class="row my-3">
-    <div id="Categorias" class="col-md-5 offset-md-2 py-3 scroll_section">
-        <h2>Categorias</h2>
-        <ul class="lista-categorias">
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img
-                        src="images/kartingniño.jpeg"></a>Niños</li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/karts2.jpeg"></a>De
-                10 a 18 años</li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img
-                        src="images/karts3.jpeg"></a>Adultos</li>
+    <div id="categorias" class="col-md-5 offset-md-2 py-3 scroll_section">
+        <h2>Novedades</h2>
+        <ul class="lista-novedades">
+            {{#each novedades}}
+            <li>
+                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#Modal{{id}}"><img
+                        src="images/kartingniño.jpeg">{{titulo}}</a>
+            </li>
+            {{/each}}
         </ul>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    {{#each novedades}}
+    <div class="modal fade" id="Modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="model-title" id="exampleModalLabel">Kartings</h2>
+                    <h2 class="model-title" id="exampleModalLabel">{{titulo}}</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h3>Desde los 8 años en adelante</h3>
-                    <p>Veni a probarlos y disfruta de la adrenalina!</p>
+                    <h3>{{subtitulo}}</h3>
+                    <p>{{cuerpo}}</p>
                 </div>
             </div>
         </div>
     </div>
+    {{/each}}
+
     <div class="col-md-3 my-3">
         <div class="rounded py-5 testimonios">
             <h2 class="text-center"> Testimonios</h2>
