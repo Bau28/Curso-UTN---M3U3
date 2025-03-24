@@ -14,7 +14,7 @@
             {{#each novedades}}
             <li>
                 <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#Modal{{id}}"><img
-                        src="images/kartingniño.jpeg">{{titulo}}</a>
+                        src="{{imagen}}">{{titulo}}</a>
             </li>
             {{/each}}
         </ul>
@@ -30,6 +30,7 @@
                 </div>
                 <div class="modal-body">
                     <h3>{{subtitulo}}</h3>
+                    <img src="{{imagen}}" width="465" height="300" />
                     <p>{{cuerpo}}</p>
                 </div>
             </div>
